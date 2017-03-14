@@ -43,7 +43,7 @@
 //               vc.plistName = @"MedicalGenaral.plist";
         vc.title = title;
 //        [self.navigationController pushViewController:vc animated:YES];
-        [self.navigationController pushViewController:self.parentViewController animated:YES];
+        [self.navigationController popViewControllerAnimated:YES];
         
     }
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
