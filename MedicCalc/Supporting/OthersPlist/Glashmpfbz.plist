@@ -17,25 +17,25 @@
 					<dict>
 						<key>score</key>
 						<string>4</string>
-						<key>state</key>
+						<key>title</key>
 						<string>自动睁眼</string>
 					</dict>
 					<dict>
 						<key>score</key>
 						<string>3</string>
-						<key>state</key>
+						<key>title</key>
 						<string>呼唤睁眼</string>
 					</dict>
 					<dict>
 						<key>score</key>
 						<string>2</string>
-						<key>state</key>
+						<key>title</key>
 						<string>刺痛睁眼</string>
 					</dict>
 					<dict>
 						<key>score</key>
 						<string>1</string>
-						<key>state</key>
+						<key>title</key>
 						<string>无反应</string>
 					</dict>
 				</array>
@@ -50,31 +50,31 @@
 					<dict>
 						<key>score</key>
 						<string>5</string>
-						<key>state</key>
+						<key>title</key>
 						<string>回答正确</string>
 					</dict>
 					<dict>
 						<key>score</key>
 						<string>4</string>
-						<key>state</key>
+						<key>title</key>
 						<string>回答混乱</string>
 					</dict>
 					<dict>
 						<key>score</key>
 						<string>3</string>
-						<key>state</key>
+						<key>title</key>
 						<string>答非所问</string>
 					</dict>
 					<dict>
 						<key>score</key>
 						<string>2</string>
-						<key>state</key>
+						<key>title</key>
 						<string>含糊不清的声音</string>
 					</dict>
 					<dict>
 						<key>score</key>
 						<string>1</string>
-						<key>state</key>
+						<key>title</key>
 						<string>无反应</string>
 					</dict>
 				</array>
@@ -89,37 +89,37 @@
 					<dict>
 						<key>score</key>
 						<string>6</string>
-						<key>state</key>
+						<key>title</key>
 						<string>正确执行指令</string>
 					</dict>
 					<dict>
 						<key>score</key>
 						<string>5</string>
-						<key>state</key>
+						<key>title</key>
 						<string>对刺激定位</string>
 					</dict>
 					<dict>
 						<key>score</key>
 						<string>4</string>
-						<key>state</key>
+						<key>title</key>
 						<string>逃避刺激</string>
 					</dict>
 					<dict>
 						<key>score</key>
 						<string>3</string>
-						<key>state</key>
+						<key>title</key>
 						<string>刺痛屈曲（去皮层强直）</string>
 					</dict>
 					<dict>
 						<key>score</key>
 						<string>2</string>
-						<key>state</key>
+						<key>title</key>
 						<string>刺痛伸展（去大脑强直）</string>
 					</dict>
 					<dict>
 						<key>score</key>
 						<string>1</string>
-						<key>state</key>
+						<key>title</key>
 						<string>无反应</string>
 					</dict>
 				</array>

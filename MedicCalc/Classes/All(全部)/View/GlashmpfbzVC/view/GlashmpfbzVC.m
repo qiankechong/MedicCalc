@@ -11,6 +11,9 @@
 #import "secondLevelPlist.h"
 #import "GlasghmStateModel.h"
 #import "GlasghmpfbzPlistload.h"
+#import "OpenEyeTVC.h"
+#import "LanguageTVC.h"
+#import "MotionTVC.h"
 
 
 @interface GlashmpfbzVC ()
@@ -35,15 +38,7 @@
     return  _groupArray;
 
 }
-//-(NSArray *)groupArray
-//{
-//    if (!_groupArray) {
-//        _groupArray = [GlasghmpfbzPlistload loadglsgPlistFile:@"Glashmpfbz.plist" ];
-//        
-//    }
-//    return  _groupArray;
-//}
-//
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -57,5 +52,45 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+
+    static NSString * cellId = @"MedicalGenarlCell";
+    
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    
+    if (!cell) {
+        cell = [tableView dequeueReusableCellWithIdentifier:cellId];
+    }
+    
+    NSString * title  = cell.textLabel.text;
+    NSLog(@"title %@",title);
+    if ([title isEqualToString:@"睁眼反应"]) {
+        OpenEyeTVC *vc = [[OpenEyeTVC alloc] init];
+//        vc.plistName = @"MedicalGenaral.plist";
+        vc.title = title;
+        [self.navigationController pushViewController:vc animated:YES];
+        //[self.navigationController popViewControllerAnimated:YES];
+        
+    }
+    if ([title isEqualToString:@"语言反应"]) {
+        LanguageTVC *vc = [[LanguageTVC alloc] init];
+//        vc.plistName = @"MedicalGenaral.plist";
+        vc.title = title;
+        [self.navigationController pushViewController:vc animated:YES];
+        //        [self.navigationController popViewControllerAnimated:YES];
+        
+    }
+    if ([title isEqualToString:@"运动反应"]) {
+        MotionTVC *vc = [[MotionTVC alloc] init];
+//        vc.plistName = @"MedicalGenaral.plist";
+        vc.title = title;
+        [self.navigationController pushViewController:vc animated:YES];
+        //        [self.navigationController popViewControllerAnimated:YES];
+        
+    }
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+
+}
 
 @end

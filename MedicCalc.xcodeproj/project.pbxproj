@@ -89,9 +89,11 @@
 		D473BF631E7239F600951CC3 /* GlasghmStateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D473BF621E7239F600951CC3 /* GlasghmStateModel.m */; };
 		D473BF661E723AF500951CC3 /* GlasghmpfbzPlistload.m in Sources */ = {isa = PBXBuildFile; fileRef = D473BF651E723AF500951CC3 /* GlasghmpfbzPlistload.m */; };
 		D473BF6C1E7241E700951CC3 /* secondLevelPlist.m in Sources */ = {isa = PBXBuildFile; fileRef = D473BF6B1E7241E700951CC3 /* secondLevelPlist.m */; };
-		D4A798B71E5446EE006CDD48 /* CommonTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A798B61E5446EE006CDD48 /* CommonTVC.m */; };
 		D4A798CC1E544B96006CDD48 /* MoreTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A798CB1E544B96006CDD48 /* MoreTVC.m */; };
 		D4DEFBA31E726F3A00EB1BFD /* CommTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DEFBA21E726F3A00EB1BFD /* CommTVC.m */; };
+		D4DEFBF31E77B2C900EB1BFD /* OpenEyeTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DEFBF21E77B2C900EB1BFD /* OpenEyeTVC.m */; };
+		D4DEFBF61E77B33500EB1BFD /* LanguageTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DEFBF51E77B33500EB1BFD /* LanguageTVC.m */; };
+		D4DEFBF91E77B35C00EB1BFD /* MotionTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DEFBF81E77B35C00EB1BFD /* MotionTVC.m */; };
 		D4EA089C1DFF7FC300F1CA9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4EA089A1DFF7FC300F1CA9D /* Main.storyboard */; };
 		D4EA089E1DFF7FC300F1CA9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4EA089D1DFF7FC300F1CA9D /* Assets.xcassets */; };
 		D4EA08A11DFF7FC300F1CA9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4EA089F1DFF7FC300F1CA9D /* LaunchScreen.storyboard */; };
@@ -220,12 +222,16 @@
 		D473BF651E723AF500951CC3 /* GlasghmpfbzPlistload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlasghmpfbzPlistload.m; sourceTree = "<group>"; };
 		D473BF6A1E7241E700951CC3 /* secondLevelPlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secondLevelPlist.h; sourceTree = "<group>"; };
 		D473BF6B1E7241E700951CC3 /* secondLevelPlist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = secondLevelPlist.m; sourceTree = "<group>"; };
-		D4A798B51E5446EE006CDD48 /* CommonTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommonTVC.h; path = ../../../CommonTVC.h; sourceTree = "<group>"; };
-		D4A798B61E5446EE006CDD48 /* CommonTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CommonTVC.m; path = ../../../CommonTVC.m; sourceTree = "<group>"; };
 		D4A798CA1E544B96006CDD48 /* MoreTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MoreTVC.h; path = ../../MoreTVC.h; sourceTree = "<group>"; };
 		D4A798CB1E544B96006CDD48 /* MoreTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MoreTVC.m; path = ../../MoreTVC.m; sourceTree = "<group>"; };
 		D4DEFBA11E726F3A00EB1BFD /* CommTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommTVC.h; sourceTree = "<group>"; };
 		D4DEFBA21E726F3A00EB1BFD /* CommTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommTVC.m; sourceTree = "<group>"; };
+		D4DEFBF11E77B2C900EB1BFD /* OpenEyeTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenEyeTVC.h; sourceTree = "<group>"; };
+		D4DEFBF21E77B2C900EB1BFD /* OpenEyeTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenEyeTVC.m; sourceTree = "<group>"; };
+		D4DEFBF41E77B33500EB1BFD /* LanguageTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanguageTVC.h; sourceTree = "<group>"; };
+		D4DEFBF51E77B33500EB1BFD /* LanguageTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanguageTVC.m; sourceTree = "<group>"; };
+		D4DEFBF71E77B35C00EB1BFD /* MotionTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MotionTVC.h; path = ../../../../../../MotionTVC.h; sourceTree = "<group>"; };
+		D4DEFBF81E77B35C00EB1BFD /* MotionTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MotionTVC.m; path = ../../../../../../MotionTVC.m; sourceTree = "<group>"; };
 		D4EA088E1DFF7FC300F1CA9D /* MedicCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedicCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4EA089B1DFF7FC300F1CA9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D4EA089D1DFF7FC300F1CA9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -1568,6 +1574,7 @@
 		D473BF561E713A6000951CC3 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				D4DEFBF01E77B27900EB1BFD /* statusEvaluation */,
 				D473BF571E713ABC00951CC3 /* GlashmpfbzVC.h */,
 				D473BF581E713ABC00951CC3 /* GlashmpfbzVC.m */,
 			);
@@ -1694,8 +1701,6 @@
 		D4A798C21E544949006CDD48 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D4A798B61E5446EE006CDD48 /* CommonTVC.m */,
-				D4A798B51E5446EE006CDD48 /* CommonTVC.h */,
 				D4DEFBA11E726F3A00EB1BFD /* CommTVC.h */,
 				D4DEFBA21E726F3A00EB1BFD /* CommTVC.m */,
 			);
@@ -1767,6 +1772,19 @@
 				D477B42E1E69408A007DDC45 /* view */,
 			);
 			name = Main;
+			sourceTree = "<group>";
+		};
+		D4DEFBF01E77B27900EB1BFD /* statusEvaluation */ = {
+			isa = PBXGroup;
+			children = (
+				D4DEFBF71E77B35C00EB1BFD /* MotionTVC.h */,
+				D4DEFBF81E77B35C00EB1BFD /* MotionTVC.m */,
+				D4DEFBF11E77B2C900EB1BFD /* OpenEyeTVC.h */,
+				D4DEFBF21E77B2C900EB1BFD /* OpenEyeTVC.m */,
+				D4DEFBF41E77B33500EB1BFD /* LanguageTVC.h */,
+				D4DEFBF51E77B33500EB1BFD /* LanguageTVC.m */,
+			);
+			name = statusEvaluation;
 			sourceTree = "<group>";
 		};
 		D4EA08851DFF7FC300F1CA9D = {
@@ -1995,6 +2013,7 @@
 				D4A798CC1E544B96006CDD48 /* MoreTVC.m in Sources */,
 				D4052C671E6D8F9A002445CC /* AppDelegate.m in Sources */,
 				D4052C811E6D9183002445CC /* detailViewController.m in Sources */,
+				D4DEFBF31E77B2C900EB1BFD /* OpenEyeTVC.m in Sources */,
 				D473B9071E656833009C5A8C /* JyProductTVC.m in Sources */,
 				D4485BDD1E559B360012523C /* LoadMoreList.m in Sources */,
 				D46598E51E669A2F00315237 /* AllItemTVC.m in Sources */,
@@ -2002,7 +2021,6 @@
 				D4052C701E6D8FCC002445CC /* TotalViewController.m in Sources */,
 				D4052C5E1E6D8F56002445CC /* CSPlistTool.m in Sources */,
 				D40F75AC1E6FE5F600955B87 /* CategoryTVC.m in Sources */,
-				D4A798B71E5446EE006CDD48 /* CommonTVC.m in Sources */,
 				D473BF631E7239F600951CC3 /* GlasghmStateModel.m in Sources */,
 				D473BF601E722A8200951CC3 /* GlasghmpfbzPlist.m in Sources */,
 				D40F75B61E6FE6DE00955B87 /* EndocrinologyTVC.m in Sources */,
@@ -2020,7 +2038,9 @@
 				D40F75B31E6FE6A600955B87 /* GastroenterologyTVC.m in Sources */,
 				D40F75BF1E6FE74700955B87 /* MegePlistLoad.m in Sources */,
 				D40F75941E6EBAA700955B87 /* AgeVC.m in Sources */,
+				D4DEFBF61E77B33500EB1BFD /* LanguageTVC.m in Sources */,
 				D473BF661E723AF500951CC3 /* GlasghmpfbzPlistload.m in Sources */,
+				D4DEFBF91E77B35C00EB1BFD /* MotionTVC.m in Sources */,
 				D4F3C49C1E5AB71F00F5BC61 /* SettingItem.m in Sources */,
 				D40F75C61E6FE7A100955B87 /* CriticalCareTVC.m in Sources */,
 				D4F3C4AE1E5AD78700F5BC61 /* MoreSettingCell.m in Sources */,
