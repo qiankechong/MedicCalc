@@ -8,6 +8,7 @@
 
 #import "CommTVC.h"
 
+
 @interface CommTVC ()
 @property (nonatomic,strong )NSArray *group;
 
@@ -50,7 +51,7 @@
 - (void)viewDidLoad
   {
     [super viewDidLoad];
-    
+      self.lastPath = nil;
   }
 
 - (void)didReceiveMemoryWarning {
@@ -104,6 +105,33 @@
 
 
 }
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    static NSString * cellId = @"MedicalGenarlCell";
+    
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    
+    if (!cell) {
+        cell = [tableView dequeueReusableCellWithIdentifier:cellId];
+    }
+    
+    NSString * title  = cell.textLabel.text;
+    NSLog(@"title %@",title);
+    
+    if ([self.delegate respondsToSelector:@selector(stateScore:)])
+    {
+        [self.delegate stateScore:title];
+    }
+    
+    
+    [self.navigationController popViewControllerAnimated:YES];
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+}
+
 
 
 @end

@@ -8,6 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+//加入公共代理协议
+@class MotionTVC;
+
+@protocol MotionTVCDelegate <NSObject>
+
+
+-(void)stateScore:(NSString *)score;
+
+@end
+
+
 @interface CommTVC : UITableViewController
 #define ZHeader                 @"groupTitle"
 #define ZFooter                 @"ZFooter"
@@ -27,4 +38,12 @@
 
 
 -(NSArray * )getGroups;
+
+
+@property  (nonatomic,strong )NSIndexPath * lastPath;
+
+
+@property(nonatomic,weak )id<MotionTVCDelegate> delegate;
+
+
 @end

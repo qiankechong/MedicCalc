@@ -1,13 +1,13 @@
 //
-//  MotionTVC.h
+//  CalculateGlasg.h
 //  MedicCalc
 //
 //  Created by Jonnyqian on 2017/3/14.
 //  Copyright © 2017年 Jonnyqian. All rights reserved.
 //
 
-#import "CommTVC.h"
+#import <Foundation/Foundation.h>
 
-@interface MotionTVC : CommTVC
+@protocol CalculateGlasg <NSObject>
 
 @end

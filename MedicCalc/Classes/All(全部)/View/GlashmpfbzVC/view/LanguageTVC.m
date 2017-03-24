@@ -8,8 +8,6 @@
 
 #import "LanguageTVC.h"
 #import "GlasghmpfbzPlist.h"
-#import "secondLevelPlist.h"
-#import "GlasghmStateModel.h"
 #import "GlasghmpfbzPlistload.h"
 
 
@@ -72,23 +70,24 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    
-    
     static NSString *cellIdentify = @"cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentify];
     if (!cell) {
-        //        cell = [[UITableViewCell alloc] initWithStyle:[self cellStyleWithItem:item] reuseIdentifier:ID];
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentify];
+         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentify];
     }
     
-    //    //获取数据
-    //    NSDictionary *item = self.groupArray[indexPath.section][kitems][indexPath.row];
-    //
-    //    NSLog(@"item%@",item);
-    //
-    
-    // Configure the cell...
     cell.textLabel.text  = [self.groupArray[indexPath.row] valueForKey:@"title"];
+    
+    if ([[[NSUserDefaults standardUserDefaults]valueForKey:@"language"] isEqualToString:cell.textLabel.text])
+    {
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    }
+    else
+    {
+        cell.accessoryType = UITableViewCellAccessoryNone;
+    }
+    
+      cell.textLabel.text  = [self.groupArray[indexPath.row] valueForKey:@"title"];
     
     
     return cell;
@@ -109,8 +108,19 @@
     NSString * title  = cell.textLabel.text;
     NSLog(@"title %@",title);
     
-    [self.navigationController popViewControllerAnimated:YES];
+    if ([self.delegate respondsToSelector:@selector(stateScore:)])
+    {
+        [self.delegate stateScore:title];
+    }
+    
+    //将上述数据全部存储到NSUserDefaults中
+    [[NSUserDefaults standardUserDefaults]setValue:title forKey:@"language"];
+    
+    cell.accessoryType = UITableViewCellAccessoryCheckmark;//cell选中的背景风格
+   [self.navigationController popViewControllerAnimated:YES];
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
-}@end
+
+}
+
+@end

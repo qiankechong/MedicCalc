@@ -8,12 +8,13 @@
 
 #import "OpenEyeTVC.h"
 #import "GlasghmpfbzPlist.h"
-#import "secondLevelPlist.h"
-#import "GlasghmStateModel.h"
 #import "GlasghmpfbzPlistload.h"
 
 @interface OpenEyeTVC ()
-
+{
+    NSInteger current;
+//    NSIndexPath * lastPath;
+}
 @end
 
 @implementation OpenEyeTVC
@@ -48,6 +49,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+//    lastPath = nil;
+//    self.lastPath = nil;
     // Do any additional setup after loading the view.
 }
 
@@ -80,16 +83,18 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentify];
     }
     
-//    //获取数据
-//    NSDictionary *item = self.groupArray[indexPath.section][kitems][indexPath.row];
-//    
-//    NSLog(@"item%@",item);
-//    
-    
     // Configure the cell...
     cell.textLabel.text  = [self.groupArray[indexPath.row] valueForKey:@"title"];
-    
-    
+    //选中打钩
+    if ([[[NSUserDefaults standardUserDefaults]valueForKey:@"eye"] isEqualToString:cell.textLabel.text])
+    {
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    }
+    else
+    {
+        cell.accessoryType = UITableViewCellAccessoryNone;
+    }
+
     return cell;
 }
 
@@ -98,7 +103,7 @@
 {
     
     static NSString * cellId = @"MedicalGenarlCell";
-    
+
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     
     if (!cell) {
@@ -107,7 +112,18 @@
     
     NSString * title  = cell.textLabel.text;
     NSLog(@"title %@",title);
+    
+    if ([self.delegate respondsToSelector:@selector(stateScore:)])
+    {
+        [self.delegate stateScore:title];
+    }
+    //将上述数据全部存储到NSUserDefaults中
+    [[NSUserDefaults standardUserDefaults]setValue:title forKey:@"eye"];
 
+    cell.accessoryType = UITableViewCellAccessoryCheckmark;//cell选中的背景风格
+
+    //lastPath在cell for row中 加载时当前indexpath，本函数中indexaPath为选中的path
+    
     [self.navigationController popViewControllerAnimated:YES];
 
     [tableView deselectRowAtIndexPath:indexPath animated:YES];

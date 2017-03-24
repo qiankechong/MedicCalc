@@ -49,13 +49,13 @@
     
     NSLog(@"[plistArray count]:%ld",[plistArray count]);
     
-    NSMutableArray *outArray = [NSMutableArray array];
+//    NSMutableArray *outArray = [NSMutableArray array];
+//    
+//    for (NSDictionary *sectionDic in plistArray)
+//    {
+//        NSMutableArray *inArray = [NSMutableArray array];
+//        
     
-    for (NSDictionary *sectionDic in plistArray)
-    {
-        NSMutableArray *inArray = [NSMutableArray array];
-        
-        
         //            CSPlistModel *plistModel = [[CSPlistModel alloc] init];
         //            plistModel.itemArray = [NSMutableArray array];
         //
@@ -78,7 +78,7 @@
         //            plistModel.itemArray = inArray;
         //            [outArray addObject:plistModel];
         
-    }
+//    }
     
 //    outArray = plistArray;
     return plistArray;

@@ -34,6 +34,9 @@
 		D40F75C91E6FE7BB00955B87 /* HematologyOncologyTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D40F75C81E6FE7BB00955B87 /* HematologyOncologyTVC.m */; };
 		D40F75CC1E6FE7CF00955B87 /* DailyNursingCareTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D40F75CB1E6FE7CF00955B87 /* DailyNursingCareTVC.m */; };
 		D40F75CF1E6FEAA600955B87 /* AADatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = D40F75CE1E6FEAA600955B87 /* AADatePicker.m */; };
+		D420BE3E1E83B6D200C47875 /* ActionScorePlistModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D420BE3D1E83B6D200C47875 /* ActionScorePlistModel.m */; };
+		D420BE411E83B6F900C47875 /* ActionAndStatusGroupPlistModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D420BE401E83B6F900C47875 /* ActionAndStatusGroupPlistModel.m */; };
+		D420BE441E83BF1800C47875 /* ActionsPlistModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D420BE431E83BF1800C47875 /* ActionsPlistModel.m */; };
 		D42768271E6DC1BF005A9D45 /* Anesthesiology.plist in Resources */ = {isa = PBXBuildFile; fileRef = D42767F91E6DC1BF005A9D45 /* Anesthesiology.plist */; };
 		D42768281E6DC1BF005A9D45 /* Cardiology.plist in Resources */ = {isa = PBXBuildFile; fileRef = D42767FA1E6DC1BF005A9D45 /* Cardiology.plist */; };
 		D42768291E6DC1BF005A9D45 /* CriticalCare.plist in Resources */ = {isa = PBXBuildFile; fileRef = D42767FB1E6DC1BF005A9D45 /* CriticalCare.plist */; };
@@ -86,9 +89,7 @@
 		D473BF591E713ABC00951CC3 /* GlashmpfbzVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D473BF581E713ABC00951CC3 /* GlashmpfbzVC.m */; };
 		D473BF5D1E71432300951CC3 /* Glashmpfbz.plist in Resources */ = {isa = PBXBuildFile; fileRef = D473BF5C1E71432300951CC3 /* Glashmpfbz.plist */; };
 		D473BF601E722A8200951CC3 /* GlasghmpfbzPlist.m in Sources */ = {isa = PBXBuildFile; fileRef = D473BF5F1E722A8200951CC3 /* GlasghmpfbzPlist.m */; };
-		D473BF631E7239F600951CC3 /* GlasghmStateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D473BF621E7239F600951CC3 /* GlasghmStateModel.m */; };
 		D473BF661E723AF500951CC3 /* GlasghmpfbzPlistload.m in Sources */ = {isa = PBXBuildFile; fileRef = D473BF651E723AF500951CC3 /* GlasghmpfbzPlistload.m */; };
-		D473BF6C1E7241E700951CC3 /* secondLevelPlist.m in Sources */ = {isa = PBXBuildFile; fileRef = D473BF6B1E7241E700951CC3 /* secondLevelPlist.m */; };
 		D4A798CC1E544B96006CDD48 /* MoreTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A798CB1E544B96006CDD48 /* MoreTVC.m */; };
 		D4DEFBA31E726F3A00EB1BFD /* CommTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DEFBA21E726F3A00EB1BFD /* CommTVC.m */; };
 		D4DEFBF31E77B2C900EB1BFD /* OpenEyeTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DEFBF21E77B2C900EB1BFD /* OpenEyeTVC.m */; };
@@ -155,6 +156,12 @@
 		D40F75CB1E6FE7CF00955B87 /* DailyNursingCareTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DailyNursingCareTVC.m; path = MedicCalc/Classes/Category/DailyNursingCare/DailyNursingCareTVC.m; sourceTree = SOURCE_ROOT; };
 		D40F75CD1E6FEAA600955B87 /* AADatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AADatePicker.h; path = ../../../../../../../../../Downloads/datepicker/CustomDatePicker/CustomDatePicker/AACustomDatePicker/AADatePicker.h; sourceTree = "<group>"; };
 		D40F75CE1E6FEAA600955B87 /* AADatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AADatePicker.m; path = ../../../../../../../../../Downloads/datepicker/CustomDatePicker/CustomDatePicker/AACustomDatePicker/AADatePicker.m; sourceTree = "<group>"; };
+		D420BE3C1E83B6D200C47875 /* ActionScorePlistModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionScorePlistModel.h; sourceTree = "<group>"; };
+		D420BE3D1E83B6D200C47875 /* ActionScorePlistModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionScorePlistModel.m; sourceTree = "<group>"; };
+		D420BE3F1E83B6F900C47875 /* ActionAndStatusGroupPlistModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionAndStatusGroupPlistModel.h; sourceTree = "<group>"; };
+		D420BE401E83B6F900C47875 /* ActionAndStatusGroupPlistModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionAndStatusGroupPlistModel.m; sourceTree = "<group>"; };
+		D420BE421E83BF1800C47875 /* ActionsPlistModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionsPlistModel.h; sourceTree = "<group>"; };
+		D420BE431E83BF1800C47875 /* ActionsPlistModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionsPlistModel.m; sourceTree = "<group>"; };
 		D42767F91E6DC1BF005A9D45 /* Anesthesiology.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Anesthesiology.plist; sourceTree = "<group>"; };
 		D42767FA1E6DC1BF005A9D45 /* Cardiology.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Cardiology.plist; sourceTree = "<group>"; };
 		D42767FB1E6DC1BF005A9D45 /* CriticalCare.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CriticalCare.plist; sourceTree = "<group>"; };
@@ -216,12 +223,8 @@
 		D473BF5C1E71432300951CC3 /* Glashmpfbz.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Glashmpfbz.plist; sourceTree = "<group>"; };
 		D473BF5E1E722A8200951CC3 /* GlasghmpfbzPlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlasghmpfbzPlist.h; sourceTree = "<group>"; };
 		D473BF5F1E722A8200951CC3 /* GlasghmpfbzPlist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlasghmpfbzPlist.m; sourceTree = "<group>"; };
-		D473BF611E7239F600951CC3 /* GlasghmStateModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlasghmStateModel.h; sourceTree = "<group>"; };
-		D473BF621E7239F600951CC3 /* GlasghmStateModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlasghmStateModel.m; sourceTree = "<group>"; };
 		D473BF641E723AF500951CC3 /* GlasghmpfbzPlistload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlasghmpfbzPlistload.h; sourceTree = "<group>"; };
 		D473BF651E723AF500951CC3 /* GlasghmpfbzPlistload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlasghmpfbzPlistload.m; sourceTree = "<group>"; };
-		D473BF6A1E7241E700951CC3 /* secondLevelPlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secondLevelPlist.h; sourceTree = "<group>"; };
-		D473BF6B1E7241E700951CC3 /* secondLevelPlist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = secondLevelPlist.m; sourceTree = "<group>"; };
 		D4A798CA1E544B96006CDD48 /* MoreTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MoreTVC.h; path = ../../MoreTVC.h; sourceTree = "<group>"; };
 		D4A798CB1E544B96006CDD48 /* MoreTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MoreTVC.m; path = ../../MoreTVC.m; sourceTree = "<group>"; };
 		D4DEFBA11E726F3A00EB1BFD /* CommTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommTVC.h; sourceTree = "<group>"; };
@@ -232,6 +235,8 @@
 		D4DEFBF51E77B33500EB1BFD /* LanguageTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanguageTVC.m; sourceTree = "<group>"; };
 		D4DEFBF71E77B35C00EB1BFD /* MotionTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MotionTVC.h; path = ../../../../../../MotionTVC.h; sourceTree = "<group>"; };
 		D4DEFBF81E77B35C00EB1BFD /* MotionTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MotionTVC.m; path = ../../../../../../MotionTVC.m; sourceTree = "<group>"; };
+		D4DEFBFD1E77DC0900EB1BFD /* CalculateGlasg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalculateGlasg.h; path = "MedicCalc/Classes/Common(收藏)/Model/CalculateGlasg.h"; sourceTree = SOURCE_ROOT; };
+		D4DEFBFE1E77DC5A00EB1BFD /* CalculateGlasgDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculateGlasgDelegate.h; sourceTree = "<group>"; };
 		D4EA088E1DFF7FC300F1CA9D /* MedicCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedicCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4EA089B1DFF7FC300F1CA9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D4EA089D1DFF7FC300F1CA9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -1559,14 +1564,16 @@
 		D473BF551E713A6000951CC3 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				D420BE3F1E83B6F900C47875 /* ActionAndStatusGroupPlistModel.h */,
+				D420BE401E83B6F900C47875 /* ActionAndStatusGroupPlistModel.m */,
+				D420BE421E83BF1800C47875 /* ActionsPlistModel.h */,
+				D420BE431E83BF1800C47875 /* ActionsPlistModel.m */,
+				D420BE3C1E83B6D200C47875 /* ActionScorePlistModel.h */,
+				D420BE3D1E83B6D200C47875 /* ActionScorePlistModel.m */,
 				D473BF5E1E722A8200951CC3 /* GlasghmpfbzPlist.h */,
 				D473BF5F1E722A8200951CC3 /* GlasghmpfbzPlist.m */,
-				D473BF611E7239F600951CC3 /* GlasghmStateModel.h */,
-				D473BF621E7239F600951CC3 /* GlasghmStateModel.m */,
 				D473BF641E723AF500951CC3 /* GlasghmpfbzPlistload.h */,
 				D473BF651E723AF500951CC3 /* GlasghmpfbzPlistload.m */,
-				D473BF6A1E7241E700951CC3 /* secondLevelPlist.h */,
-				D473BF6B1E7241E700951CC3 /* secondLevelPlist.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -1693,6 +1700,8 @@
 		D4A798C11E544949006CDD48 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D4DEFBFD1E77DC0900EB1BFD /* CalculateGlasg.h */,
+				D4DEFBFE1E77DC5A00EB1BFD /* CalculateGlasgDelegate.h */,
 			);
 			name = Model;
 			path = "MedicCalc/Classes/More(更多)/Model";
@@ -2014,6 +2023,7 @@
 				D4052C671E6D8F9A002445CC /* AppDelegate.m in Sources */,
 				D4052C811E6D9183002445CC /* detailViewController.m in Sources */,
 				D4DEFBF31E77B2C900EB1BFD /* OpenEyeTVC.m in Sources */,
+				D420BE441E83BF1800C47875 /* ActionsPlistModel.m in Sources */,
 				D473B9071E656833009C5A8C /* JyProductTVC.m in Sources */,
 				D4485BDD1E559B360012523C /* LoadMoreList.m in Sources */,
 				D46598E51E669A2F00315237 /* AllItemTVC.m in Sources */,
@@ -2021,16 +2031,16 @@
 				D4052C701E6D8FCC002445CC /* TotalViewController.m in Sources */,
 				D4052C5E1E6D8F56002445CC /* CSPlistTool.m in Sources */,
 				D40F75AC1E6FE5F600955B87 /* CategoryTVC.m in Sources */,
-				D473BF631E7239F600951CC3 /* GlasghmStateModel.m in Sources */,
 				D473BF601E722A8200951CC3 /* GlasghmpfbzPlist.m in Sources */,
 				D40F75B61E6FE6DE00955B87 /* EndocrinologyTVC.m in Sources */,
 				D473BF591E713ABC00951CC3 /* GlashmpfbzVC.m in Sources */,
 				D473B9041E656102009C5A8C /* MedicGenTVC.m in Sources */,
+				D420BE3E1E83B6D200C47875 /* ActionScorePlistModel.m in Sources */,
 				D4052C6A1E6D8F9A002445CC /* NSDictionary+Log.m in Sources */,
 				D4F3C4C01E5B413400F5BC61 /* SettingGroup.m in Sources */,
 				D4F3C4A81E5AD11800F5BC61 /* SettingItemSwitch.m in Sources */,
-				D473BF6C1E7241E700951CC3 /* secondLevelPlist.m in Sources */,
 				D4052C6D1E6D8FBF002445CC /* ViewController.m in Sources */,
+				D420BE411E83B6F900C47875 /* ActionAndStatusGroupPlistModel.m in Sources */,
 				D40F75B91E6FE71700955B87 /* MedicalGeneralTVC.m in Sources */,
 				D40F75CF1E6FEAA600955B87 /* AADatePicker.m in Sources */,
 				D4052C5D1E6D8F56002445CC /* CSPlistModel.m in Sources */,

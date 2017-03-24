@@ -137,19 +137,19 @@
 				<key>items</key>
 				<array>
 					<dict>
-						<key>result</key>
+						<key>title</key>
 						<string>轻度意识障碍</string>
 						<key>score</key>
 						<string>8</string>
 					</dict>
 					<dict>
-						<key>result</key>
+						<key>title</key>
 						<string>中度意识障碍</string>
 						<key>score</key>
 						<string>12</string>
 					</dict>
 					<dict>
-						<key>result</key>
+						<key>title</key>
 						<string>重度意识障碍</string>
 						<key>score</key>
 						<string>14</string>
