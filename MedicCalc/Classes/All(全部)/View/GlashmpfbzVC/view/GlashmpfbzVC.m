@@ -34,34 +34,15 @@
 @implementation GlashmpfbzVC
 
 #pragma mark - 懒加载数据模型
--(NSArray *)groupsArray
-{
-    
-    NSLog(@"getGroups:");
-
-    NSArray * gpArray = [GlasghmpfbzPlistload loadglsgPlistFile:@"Glashmpfbz.plist" ];
-    NSLog(@"_groupArray:%@",gpArray);
-
-    NSMutableArray *actionScoreArray = [NSMutableArray array];
-    
-    for (NSDictionary *dict in gpArray) {
-        ActionAndStatusGroupPlistModel *actionsAndResultsGroup = [ActionAndStatusGroupPlistModel ActionAndStatusWithDict:dict];
-        [actionScoreArray addObject:actionsAndResultsGroup];
-    }
-    _groupsArray = [actionScoreArray copy];
-    
-    return _groupsArray;
-}
-
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self.view setBackgroundColor:[UIColor magentaColor]];
     //重新进入计算选项是，清空配置信息
-    [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"motion"];
-    [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"eye"];
-    [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"language"];
+    [[NSUserDefaults standardUserDefaults] removeObjectForKey:USRKEYE];
+    [[NSUserDefaults standardUserDefaults] removeObjectForKey:USRKMOTION];
+    [[NSUserDefaults standardUserDefaults] removeObjectForKey:USRKLANGUAGE];
     [[NSUserDefaults standardUserDefaults] synchronize];
     
 }
@@ -178,18 +159,12 @@
     NSLog(@"row %ld",self.indexPath.row);
     NSLog(@"score section %ld",self.indexPath.section);
 
-    self.title = score;
-    
     NSLog(@"score%@",score);
 
     
     NSString* str =  [strCellresultName stringByAppendingString:score];
     
     self.cell.textLabel.text =  str;
-    
-   
-    
-    
     
 //    [self.tableView reloadRowsAtIndexPaths:@[self.indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
 

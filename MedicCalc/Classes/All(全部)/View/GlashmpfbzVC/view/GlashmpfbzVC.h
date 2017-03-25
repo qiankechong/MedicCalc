@@ -10,6 +10,6 @@
 #import "CommTVC.h"
 
 @interface GlashmpfbzVC : CommTVC
-@property  (nonatomic,strong )NSArray *groupsArray;
 
 @end
+

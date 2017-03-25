@@ -9,6 +9,5 @@
 #import "CommTVC.h"
 
 @interface OpenEyeTVC : CommTVC
-@property  (nonatomic,strong )NSArray *groupArray;
 
 @end

@@ -8,6 +8,5 @@
 
 #import "CommTVC.h"
 @interface LanguageTVC : CommTVC
-@property  (nonatomic,strong )NSArray *groupArray;
 
 @end

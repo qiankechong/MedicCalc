@@ -35,13 +35,24 @@
 #define ZTargetVc               @"ZTargetVc"
 #define ZKeyName                @"ZKeyName"
 #define ZCallFunc               @"ZCallFunc"
+#define USRKEYE                     @"EYE"
+#define USRKMOTION                  @"MOTION"
+#define USRKLANGUAGE                @"LANGUAGE"
+
+#define EYEITEMSINDEX                     0
+#define LANGUAGEITEMSINDEX                1
+#define MOTIONITEMSINDEX                  2
 
 
 -(NSArray * )getGroups;
+-(NSInteger )getItemIndex;
+-(NSString * )getUserKeyString;
 
 
 @property  (nonatomic,strong )NSIndexPath * lastPath;
 
+@property  (nonatomic,strong )NSArray *groupsArray;
+@property  (nonatomic,assign )NSInteger itemsIndex;
 
 @property(nonatomic,weak )id<MotionTVCDelegate> delegate;
 
